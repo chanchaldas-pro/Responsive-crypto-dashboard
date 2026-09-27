@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title description">
+  <title id="title">Nexus Crypto Wallet Dashboard Flow</title>
+  <desc id="description">Responsive app entry leading to the dashboard, then six implemented interaction branches for search, chart, bidding, wallet, buy and sell, and navigation and theme.</desc>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#243046" stroke-width="1" opacity=".42"/>
+    </pattern>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101a2b"/>
+      <stop offset="1" stop-color="#111321"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#ff7567"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-20%" width="130%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#050914" flood-opacity=".34"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#8292ad"/>
+    </marker>
+    <style>
+      text { font-family: "Segoe UI", sans-serif; }
+      .title { fill: #f3f6fb; font-size: 34px; font-weight: 700; }
+      .eyebrow { fill: #a9b8d0; font-size: 13px; font-weight: 700; letter-spacing: 2px; }
+      .subtitle { fill: #aab6ca; font-size: 16px; }
+      .node-title { fill: #f3f6fb; font-size: 18px; font-weight: 700; }
+      .node-copy { fill: #aebbd0; font-size: 14px; }
+      .card-title { fill: #f3f6fb; font-size: 16px; font-weight: 700; }
+      .card-copy { fill: #b8c3d6; font-size: 13px; }
+      .tag { fill: #9baac1; font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="980" fill="url(#bg)"/>
+  <rect width="1600" height="980" fill="url(#grid)"/>
+  <circle cx="1450" cy="105" r="190" fill="#ff7567" opacity=".055"/>
+  <circle cx="130" cy="840" r="240" fill="#38bdf8" opacity=".045"/>
+
+  <text x="80" y="70" class="eyebrow">NEXUS  /  CRYPTO WALLET</text>
+  <text x="80" y="120" class="title">Dashboard interaction flow</text>
+  <text x="80" y="151" class="subtitle">What the current responsive UI does when you use it</text>
+  <rect x="1274" y="78" width="246" height="38" rx="19" fill="#182438" stroke="#34425a"/>
+  <circle cx="1298" cy="97" r="5" fill="#ff7567"/>
+  <text x="1312" y="102" class="tag">CURRENT UI BEHAVIOR</text>
+
+  <g filter="url(#shadow)">
+    <rect x="645" y="190" width="310" height="72" rx="16" fill="#19263a" stroke="#43516a"/>
+    <rect x="645" y="190" width="5" height="72" rx="2.5" fill="#38bdf8"/>
+    <text x="675" y="221" class="node-title">Open Nexus</text>
+    <text x="675" y="244" class="node-copy">Start at the dashboard</text>
+
+    <rect x="645" y="310" width="310" height="82" rx="16" fill="#19263a" stroke="#43516a"/>
+    <rect x="645" y="310" width="5" height="82" rx="2.5" fill="#ff9e73"/>
+    <text x="675" y="343" class="node-title">Responsive layout</text>
+    <text x="675" y="369" class="node-copy">Mobile &lt; 768  /  Tablet 768-1199  /  Desktop 1200+</text>
+
+    <rect x="610" y="440" width="380" height="82" rx="18" fill="#202d43" stroke="#52637c"/>
+    <rect x="610" y="440" width="7" height="82" rx="3.5" fill="url(#accent)"/>
+    <text x="650" y="474" class="node-title">Dashboard hub</text>
+    <text x="650" y="499" class="node-copy">Watchlist  ·  Checkout  ·  Buy/Sell  ·  Wallet</text>
+  </g>
+
+  <path d="M800 262V302" fill="none" stroke="#8292ad" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M800 392V432" fill="none" stroke="#8292ad" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M800 522V552H180M800 552H1380" fill="none" stroke="#8292ad" stroke-width="2"/>
+  <path d="M180 552V574M420 552V574M660 552V574M900 552V574M1140 552V574M1380 552V574" fill="none" stroke="#8292ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="590" width="220" height="238" rx="16" fill="#182337" stroke="#35445d"/>
+    <rect x="70" y="590" width="220" height="5" rx="2.5" fill="#38bdf8"/>
+    <text x="90" y="627" class="card-title">01  Search assets</text>
+    <text x="90" y="665" class="card-copy">
+      <tspan x="90" dy="0">Enter a token name or</tspan>
+      <tspan x="90" dy="21">symbol in the search field.</tspan>
+      <tspan x="90" dy="31" fill="#e1e8f2">→ Watchlist filters locally</tspan>
+      <tspan x="90" dy="21">or shows an empty state.</tspan>
+    </text>
+
+    <rect x="310" y="590" width="220" height="238" rx="16" fill="#182337" stroke="#35445d"/>
+    <rect x="310" y="590" width="220" height="5" rx="2.5" fill="#61d6ad"/>
+    <text x="330" y="627" class="card-title">02  Checkout chart</text>
+    <text x="330" y="665" class="card-copy">
+      <tspan x="330" dy="0">Choose Day, Week,</tspan>
+      <tspan x="330" dy="21">Month, or Year.</tspan>
+      <tspan x="330" dy="31" fill="#e1e8f2">→ Sample series updates</tspan>
+      <tspan x="330" dy="21">with hover value details.</tspan>
+    </text>
+
+    <rect x="550" y="590" width="220" height="238" rx="16" fill="#182337" stroke="#35445d"/>
+    <rect x="550" y="590" width="220" height="5" rx="2.5" fill="#ff9e73"/>
+    <text x="570" y="627" class="card-title">03  Place a bid</text>
+    <text x="570" y="665" class="card-copy">
+      <tspan x="570" dy="0">Enter an amount in USDT.</tspan>
+      <tspan x="570" dy="31" fill="#e1e8f2">→ Cancel closes the form</tspan>
+      <tspan x="570" dy="21">→ Confirm shows success</tspan>
+      <tspan x="570" dy="21">feedback (demo only).</tspan>
+    </text>
+
+    <rect x="790" y="590" width="220" height="238" rx="16" fill="#182337" stroke="#35445d"/>
+    <rect x="790" y="590" width="220" height="5" rx="2.5" fill="#f7c65f"/>
+    <text x="810" y="627" class="card-title">04  Wallet</text>
+    <text x="810" y="665" class="card-copy">
+      <tspan x="810" dy="0">Add New shows a notice.</tspan>
+      <tspan x="810" dy="31" fill="#e1e8f2">→ Send shows a transfer</tspan>
+      <tspan x="810" dy="21">confirmation (demo only).</tspan>
+      <tspan x="810" dy="31">No wallet or network call.</tspan>
+    </text>
+
+    <rect x="1030" y="590" width="220" height="238" rx="16" fill="#182337" stroke="#35445d"/>
+    <rect x="1030" y="590" width="220" height="5" rx="2.5" fill="#b29cff"/>
+    <text x="1050" y="627" class="card-title">05  Buy / Sell</text>
+    <text x="1050" y="665" class="card-copy">
+      <tspan x="1050" dy="0">Review seeded token rates</tspan>
+      <tspan x="1050" dy="21">and amounts.</tspan>
+      <tspan x="1050" dy="31" fill="#e1e8f2">→ Support shows a local</tspan>
+      <tspan x="1050" dy="21">connection notice.</tspan>
+    </text>
+
+    <rect x="1270" y="590" width="220" height="238" rx="16" fill="#182337" stroke="#35445d"/>
+    <rect x="1270" y="590" width="220" height="5" rx="2.5" fill="#ff7567"/>
+    <text x="1290" y="627" class="card-title">06  Nav &amp; theme</text>
+    <text x="1290" y="665" class="card-copy">
+      <tspan x="1290" dy="0">Select a destination to</tspan>
+      <tspan x="1290" dy="21">update its active state.</tspan>
+      <tspan x="1290" dy="31" fill="#e1e8f2">→ Toggle light / dark</tspan>
+      <tspan x="1290" dy="21">appearance.</tspan>
+    </text>
+  </g>
+
+  <path d="M80 874H1520" stroke="#35445d" stroke-width="1"/>
+  <circle cx="91" cy="911" r="5" fill="#ff9e73"/>
+  <text x="108" y="916" class="subtitle">Demo boundary: market values are mock data; trade, wallet, and support controls provide local UI feedback only.</text>
+  <text x="80" y="957" class="tag">NEXUS DASHBOARD  /  IMPLEMENTED UI FLOW</text>
+</svg>
